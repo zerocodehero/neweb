@@ -1,14 +1,14 @@
 <template>
-    <div>
-        {{ name }}
-    </div>
+  <div></div>
 </template>
 
 <script setup>
-const name = "123"
+import { ref } from 'vue'
+const count = ref(0)
+if (count.value !== 0) {
+    console.log('foo')
+}
+
 </script>
 
-<style lang="scss">
-
-
-</style>
+<style lang="scss" scoped></style>
