@@ -1,13 +1,12 @@
-import { createApp } from 'vue'
-import Antd from 'ant-design-vue';
-import { createPinia } from "pinia"
-import App from './App.vue'
-import router from './router'
-import 'ant-design-vue/dist/antd.css';
-
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from "./App.vue";
+import router from "./router";
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 
 createApp(App)
-    .use(createPinia())
-    .use(router)
-    .use(Antd)
-    .mount('#app')
+.use(createPinia())
+.use(router)
+.use(ElementPlus)
+.mount("#app");
